@@ -2,14 +2,14 @@ library base_templates;
 
 import 'package:flutter/material.dart';
 
-class FullScreenLoading extends StatelessWidget {
-  const FullScreenLoading({super.key});
+class LinearFullScreenLoading extends StatelessWidget {
+  const LinearFullScreenLoading({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: CircularProgressIndicator(),
+      body: SafeArea(
+        child: LinearProgressIndicator(),
       ),
     );
   }
